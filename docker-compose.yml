@@ -10,7 +10,7 @@ services:
       - db
     environment:
       - DEBUG=True
-      - DB_NAME=shop_db
+      - DB_NAME=project_db
       - DB_USER=root
       - DB_PASSWORD=root123
       - DB_HOST=db
@@ -22,7 +22,7 @@ services:
     container_name: django_db
     restart: always
     environment:
-      MYSQL_DATABASE: shop_db
+      MYSQL_DATABASE: project_db
       MYSQL_ROOT_PASSWORD: root123
     ports:
       - "3307:3306"
